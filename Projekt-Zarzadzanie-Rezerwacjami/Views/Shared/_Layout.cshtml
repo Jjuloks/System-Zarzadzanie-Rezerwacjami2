@@ -30,6 +30,7 @@
                     </ul>
                 </div>
             </div>
+
         </nav>
         </div>
         <style>
@@ -44,7 +45,7 @@
             var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
             var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
             var isLoginPage = string.Equals(currentController, "Login", System.StringComparison.OrdinalIgnoreCase)
-                              && string.Equals(currentAction, "Index", System.StringComparison.OrdinalIgnoreCase);
+            && string.Equals(currentAction, "Index", System.StringComparison.OrdinalIgnoreCase);
         }
 
         @if (!isLoginPage)
